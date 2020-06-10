@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Sprat Web Black";
+  src: url("../src/fonts/sprat-web/SpratBlack.woff2") format("woff2"),
+    url("../src/fonts/sprat-web/SpratBlack.woff") format("woff");
+}
+@font-face {
+  font-family: "Sprat Web Regular";
+  src: url("../src/fonts/sprat-web/SpratCndRegular.woff") format("woff"),
+    url("../src/fonts/sprat-web/SpratCndRegular.woff2") format("woff2");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 16px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --lightgrey: #c9c9c9;
+  --grey: #808080;
+  --purple: #621dfd;
+  --green: #00fc96;
 }
