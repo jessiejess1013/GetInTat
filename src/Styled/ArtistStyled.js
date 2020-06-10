@@ -17,7 +17,8 @@ export const NameTalent = styled.div`
     padding-top: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    border-radius: 0 20px 0 0;
+    border-radius: 0 50px 0 0;
+    text-transform: uppercase;
     background-color: var(--purple);
   }
   div {
@@ -25,7 +26,7 @@ export const NameTalent = styled.div`
     padding: 10px 0 10px 10px;
     margin-top: 0;
     margin-bottom: 0;
-    color: var(--green);
+    color: var();
   }
   @media only screen and (max-width: 768px) {
     margin-left: 8vw;
@@ -52,6 +53,7 @@ export const ArtistProfile = styled.section`
     flex-direction: row;
   }
   .profile {
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     align-self: flex-end;
@@ -96,7 +98,7 @@ export const ArtistProfile = styled.section`
       margin-left: 5vw;
     }
     .bio {
-      width: 80vw;
+      width: 84vw;
       margin-left: 0;
     }
   }
@@ -111,7 +113,7 @@ export const ArtistProfile = styled.section`
 export const Container = styled.div`
   width: 14vw;
   height: 14vw;
-  padding: 0 10px 20px 0;
+  padding: 0 20px 30px 0;
   overflow: hidden;
   position: relative;
   img {
@@ -121,6 +123,7 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     width: 20vw;
     height: 20vw;
+    padding: 0 10px 30px 0;
   }
   @media only screen and (max-width: 480px) {
     width: 40vw;

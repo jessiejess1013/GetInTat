@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyleSection = styled.section`
   display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
   .style-list {
     &:hover {
       color: var(--lightgrey);
@@ -12,6 +14,7 @@ export const StyleSection = styled.section`
         cursor: pointer;
         color: black;
         font-style: italic;
+        font-weight: 300;
       }
     }
   }
@@ -42,18 +45,14 @@ export const StyleSection = styled.section`
     color: var(--purple);
     font-weight: 500;
     font-size: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
     position: absolute;
     right: 5%;
-    top: 95%;
+    bottom: -5%;
   }
   @media only screen and (max-width: 768px) {
     .style-list {
-      width: 90vw;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      font-size: 1.5rem;
       margin-bottom: 25vh;
       p {
         margin-top: 0;
@@ -61,32 +60,35 @@ export const StyleSection = styled.section`
       }
     }
     svg {
-      width: 30%;
-      height: 30%;
+      width: 40%;
+      height: 40%;
       margin-top: 40px;
-      margin-left: -95vw;
+      margin-left: 0;
       z-index: 1;
     }
     .style-description {
       width: 84vw;
       margin-left: 0;
-      margin-top: 50px;
+      margin-top: 380px;
       display: block;
       p {
-        padding: 1rem 3rem 1rem 13rem;
+        padding: 1rem 3rem;
       }
     }
     @media only screen and (max-width: 480px) {
       .style-list {
-        margin-bottom: 45vh;
+        margin-bottom: 40vh;
+        p {
+          line-height: 0.8;
+        }
       }
       svg {
-        display: none;
+        margin-top: -20px;
       }
       .style-description {
         width: 90vw;
         margin-left: 0;
-        margin-top: 80px;
+        margin-top: 200px;
         p {
           padding: 1rem 3rem;
         }

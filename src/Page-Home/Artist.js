@@ -30,7 +30,7 @@ export const artist = {
     "Rose",
     "Diver",
     "Scissors",
-    "Elephant God",
+    "Ganesha",
     "Mermaid",
   ],
   name: "Artist Name",

@@ -11,24 +11,30 @@ export const BackTo = styled.p`
   &:hover {
     cursor: pointer;
   }
+  svg {
+    width: 0.8rem;
+    margin-right: 0.5rem;
+  }
 `;
 
 export const MainProfile = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 5vh;
+  @media only screen and (max-width: 768px) {
+    margin-top: 3vh;
+  }
 
   .profile-container {
     width: 20vw;
-    height: 22vw;
-    margin-top: 5vh;
+    height: 26vw;
     padding-left: 1vw;
     background-color: var(--purple);
-    border-radius: 0 20px 0 0;
+    border-radius: 0 50px 0 0;
     overflow: hidden;
     position: relative;
     @media only screen and (max-width: 768px) {
-      margin-top: 2vh;
-      width: 35vw;
+      width: 30vw;
       height: 38vw;
     }
     @media only screen and (max-width: 480px) {
@@ -37,11 +43,12 @@ export const MainProfile = styled.div`
     }
     p {
       color: white;
-      margin-left: 5%;
+      margin-left: 3%;
+      text-transform: uppercase;
     }
     img {
-      margin-left: 5%;
-      height: 90%;
+      margin-left: 3%;
+      height: 80%;
       width: auto;
     }
   }
@@ -52,12 +59,13 @@ export const MainProfile = styled.div`
     display: flex;
     flex-direction: column;
     button {
-      border-radius: 10px;
-      border: 2px solid var(--green);
+      border-radius: 20px;
+      border: 2px solid black;
       background-color: var(--green);
-      width: 6rem;
-      height: 3rem;
-      font-size: 1.5rem;
+      width: 12rem;
+      height: 4rem;
+      font-size: 2.5rem;
+      text-transform: uppercase;
       &:hover {
         background-color: white;
         cursor: pointer;
@@ -74,15 +82,23 @@ export const MainProfile = styled.div`
       }
       span {
         color: black;
-        font-size: 2rem;
+        font-size: 1.5rem;
+      }
+      svg {
+        width: 2rem;
       }
     }
     .bio {
       margin: 0;
+      font-size: 1.5rem;
     }
     @media only screen and (max-width: 768px) {
       button {
-        margin-top: 15px;
+        border-radius: 15px;
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 2rem;
+        text-transform: uppercase;
       }
       .info-section {
         flex-direction: column;
@@ -93,15 +109,10 @@ export const MainProfile = styled.div`
           font-size: 1.5rem;
         }
         svg {
-          width: 3rem;
+          width: 2.5rem;
         }
       }
       .bio {
-        display: none;
-      }
-    }
-    @media only screen and (max-width: 480px) {
-      button {
         display: none;
       }
     }
@@ -112,27 +123,6 @@ export const Mobile = styled.div`
   display: none;
   @media only screen and (max-width: 768px) {
     display: block;
-    button {
-      display: none;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    button {
-      display: block;
-    }
-  }
-  button {
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    background-color: var(--green);
-    width: 5rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    margin-bottom: 0;
-    &:hover {
-      background-color: white;
-      cursor: pointer;
-    }
   }
 `;
 
@@ -206,23 +196,35 @@ export const Portfolio = styled.div`
     .tattoo-name {
       color: white;
       position: absolute;
+      width: 100%;
       top: 20%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2.5vw;
+      transform: translate(-40%, -50%);
+      font-size: 3rem;
       font-family: "Sprat Web Regular";
     }
     .image-category {
       color: white;
       position: absolute;
+      width: 100%;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-40%, -30%);
       z-index: 1;
-      font-size: 1vw;
+      font-size: 1rem;
       span {
         text-transform: uppercase;
-        font-size: 1.2vw;
+        font-size: 1.5rem;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .tattoo-name {
+        font-size: 2rem;
+      }
+      .image-category {
+        span {
+          font-size: 1rem;
+        }
       }
     }
   }

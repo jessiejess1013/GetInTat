@@ -5,7 +5,7 @@ export const Intro = styled.h1`
   display: inline-block;
   padding-top: 10vh;
   width: 60vw;
-  max-width: 45rem;
+  max-width: 42rem;
   font-size: 3rem;
   font-family: "Sprat Web Black";
   margin-left: 10vw;
@@ -21,6 +21,7 @@ export const Intro = styled.h1`
 
 export const Section = styled.p`
   font-size: 2.5rem;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin-left: 10vw;
   text-transform: uppercase;
@@ -34,6 +35,10 @@ export const Section = styled.p`
   }
   @media only screen and (max-width: 480px) {
     margin-left: 5vw;
+    font-size: 2rem;
+    .icons {
+      width: 1.5rem;
+    }
   }
 `;
 

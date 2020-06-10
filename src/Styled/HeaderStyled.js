@@ -18,21 +18,42 @@ export const StyledHeader = styled.header`
   form {
     position: relative;
     background: none;
-    img {
-      width: 25px;
+    svg {
+      margin-left: -100px;
+      width: 20px;
     }
     input {
+      margin-left: -20px;
       border: none;
       border-bottom: 1px solid black;
       background: none;
+      ::placeholder {
+        padding-left: 20px;
+      }
     }
   }
   p {
+    font-family: Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-right: 10vw;
+    position: relative;
     &:hover {
-      text-decoration: underline;
       cursor: pointer;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: 0;
+      background-color: black;
+      visibility: visible;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover:before {
+      visibility: hidden;
+      width: 0;
     }
   }
   @media only screen and (max-width: 768px) {
@@ -45,7 +66,6 @@ export const StyledHeader = styled.header`
     }
   }
   @media only screen and (max-width: 480px) {
-    width: 100vw;
     svg {
       margin-left: 5vw;
       width: 50%;

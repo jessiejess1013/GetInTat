@@ -75,9 +75,9 @@ export const FilterList = styled.section`
 `;
 
 export const ProfileContainer = styled.div`
-  width: 22vw;
+  width: 25vw;
   float: left;
-  padding-bottom: 32vw;
+  padding-bottom: 35vw;
   height: 0;
   padding-left: 1vw;
   background-color: var(--purple);
@@ -85,16 +85,16 @@ export const ProfileContainer = styled.div`
   overflow: hidden;
   position: relative;
   @media only screen and (max-width: 768px) {
-    width: 26vw;
-    padding-bottom: 38vw;
+    padding-bottom: 40vw;
   }
   @media only screen and (max-width: 480px) {
-    width: 35vw;
-    padding-bottom: 60vw;
+    width: 40vw;
+    padding-bottom: 65vw;
   }
   p {
     color: white;
     margin-left: 5%;
+    text-transform: uppercase;
   }
   img {
     margin-left: 5%;
@@ -105,9 +105,11 @@ export const ProfileContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5px;
     p {
       margin-left: 5%;
       text-transform: uppercase;
+      font-size: 1.2rem;
       &:hover {
         cursor: pointer;
       }
@@ -134,19 +136,28 @@ export const ProfileContainer = styled.div`
     }
   }
   button {
-    border-radius: 10px;
-    border: 1px solid var(--green);
+    border-radius: 20px;
+    border: 2px solid black;
     background-color: var(--green);
-    width: 6rem;
-    height: 2.5rem;
-    font-weight: 100;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-right: 5px;
     text-transform: uppercase;
-    margin-right: 1vw;
     &:hover {
       background-color: white;
       cursor: pointer;
     }
-    @media only screen and (max-width: 768px) {
+  }
+  @media only screen and (max-width: 768px) {
+    div {
+      margin-top: 2px;
+      p {
+        font-size: 1rem;
+      }
+    }
+    button {
+      font-size: 1rem;
       width: 5rem;
       height: 2rem;
     }
@@ -155,26 +166,22 @@ export const ProfileContainer = styled.div`
 
 export const TattooContainer = styled(ProfileContainer)`
   padding-top: 2vw;
-  padding-bottom: 28vw;
+  padding-bottom: 33vw;
   border-radius: 20px 0 0 0;
   @media only screen and (max-width: 768px) {
     padding-bottom: 35vw;
   }
   @media only screen and (max-width: 480px) {
-    padding-bottom: 50vw;
+    padding-bottom: 60vw;
   }
   .container {
-    width: 22vw;
-    height: 22vw;
+    width: 25vw;
+    height: 25vw;
     position: relative;
     overflow: hidden;
-    @media only screen and (max-width: 768px) {
-      width: 26vw;
-      height: 26vw;
-    }
     @media only screen and (max-width: 480px) {
-      width: 35vw;
-      height: 35vw;
+      width: 40vw;
+      height: 40vw;
     }
     img {
       position: absolute;
