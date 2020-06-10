@@ -26,18 +26,16 @@ class Profile extends React.Component {
                 viewBox="0 0 80.654 81"
               >
                 <rect
-                  x="18.621"
-                  y="17.653"
-                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 27.3191 -25.6492)"
-                  fill="#231F20"
-                  width="52"
-                  height="5"
+                  x="42.1"
+                  y="34.8"
+                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -29.9564 49.3727)"
+                  width="5"
+                  height="52"
                 />
                 <rect
-                  x="18.621"
-                  y="58.347"
-                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -29.9565 49.3735)"
-                  fill="#231F20"
+                  x="18.6"
+                  y="17.7"
+                  transform="matrix(0.7071 -0.7071 0.7071 0.7071 -1.1809 37.4539)"
                   width="52"
                   height="5"
                 />
