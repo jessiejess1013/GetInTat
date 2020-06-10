@@ -48,25 +48,27 @@ export const StyleSection = styled.section`
   }
   @media only screen and (max-width: 768px) {
     .style-list {
-      width: 80vw;
+      width: 90vw;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       font-size: 1.5rem;
-      margin-bottom: 20vh;
+      margin-bottom: 25vh;
       p {
         margin-top: 0;
+        margin-right: 10px;
       }
     }
     svg {
       width: 30%;
       height: 30%;
       margin-top: 40px;
-      margin-left: -85vw;
+      margin-left: -95vw;
       z-index: 1;
     }
     .style-description {
-      width: 80%;
+      width: 84vw;
       margin-left: 0;
       margin-top: 50px;
       display: block;
@@ -76,20 +78,14 @@ export const StyleSection = styled.section`
     }
     @media only screen and (max-width: 480px) {
       .style-list {
-        width: 90vw;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-bottom: 40vh;
-        p {
-          margin-right: 10px;
-        }
+        margin-bottom: 45vh;
       }
       svg {
         display: none;
       }
       .style-description {
-        margin-left: 10%;
+        width: 90vw;
+        margin-left: 0;
         margin-top: 80px;
         p {
           padding: 1rem 3rem;

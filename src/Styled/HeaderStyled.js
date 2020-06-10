@@ -48,6 +48,7 @@ export const StyledHeader = styled.header`
     width: 100vw;
     svg {
       margin-left: 5vw;
+      width: 50%;
     }
     form {
       display: none;
