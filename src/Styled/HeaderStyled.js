@@ -99,6 +99,9 @@ export const LoginModal = styled.div`
     height: 40px;
     border: 1px solid var(--purple);
     margin-bottom: 5px;
+    ::placeholder {
+      padding-left: 10px;
+    }
   }
   .password {
     color: var(--green);
@@ -130,7 +133,7 @@ export const LoginModal = styled.div`
       position: absolute;
       width: 100%;
       height: 1px;
-      bottom: 10px;
+      bottom: 20px;
       right: 0;
       background-color: black;
       visibility: visible;
@@ -143,6 +146,7 @@ export const LoginModal = styled.div`
   }
   .close-button {
     font-size: 5rem;
+    font-weight: 100;
     position: absolute;
     flex: none;
     right: 100px;

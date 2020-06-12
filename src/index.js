@@ -7,12 +7,26 @@ import Profile from "../src/Page-Artist/Profile";
 import AllArtist from "../src/Page-Artist/AllArtist";
 import * as serviceWorker from "./serviceWorker";
 
+class ScrollToTop extends React.Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0);
+    }
+  }
+  render() {
+    return this.props.children;
+  }
+}
+export default ScrollToTop;
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/profile" component={Profile} />
-      <Route path="/allartist" component={AllArtist} />
+      <ScrollToTop>
+        <Route exact path="/" component={App} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/allartist" component={AllArtist} />
+      </ScrollToTop>
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
