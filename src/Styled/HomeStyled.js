@@ -97,8 +97,7 @@ export const StyledFooter = styled.footer`
   div {
     text-transform: uppercase;
     line-height: 1;
-    margin-left: 10vw;
-    margin-bottom: 15px;
+    margin: 10px 0 25px 10vw;
     a {
       cursor: pointer;
       text-decoration: none;

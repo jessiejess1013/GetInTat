@@ -130,7 +130,7 @@ export const LoginModal = styled.div`
       position: absolute;
       width: 100%;
       height: 1px;
-      bottom: 0;
+      bottom: 10px;
       right: 0;
       background-color: black;
       visibility: visible;
@@ -149,6 +149,12 @@ export const LoginModal = styled.div`
     top: -20px;
     &:hover {
       cursor: pointer;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 3rem;
+      position: absolute;
+      flex: none;
+      right: 50px;
     }
   }
 `;

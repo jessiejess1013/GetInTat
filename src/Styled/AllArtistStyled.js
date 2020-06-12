@@ -136,7 +136,7 @@ export const ProfileContainer = styled.div`
     }
   }
   button {
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid black;
     background-color: var(--green);
     width: 7rem;
@@ -157,23 +157,21 @@ export const ProfileContainer = styled.div`
       }
     }
     button {
+      border: 1px solid black;
+      border-radius: 10px;
       font-size: 1rem;
       width: 5rem;
       height: 2rem;
     }
   }
+  @media only screen and (max-width: 480px) {
+    button {
+      border-radius: 8px;
+    }
+  }
 `;
 
 export const TattooContainer = styled(ProfileContainer)`
-  padding-top: 2vw;
-  padding-bottom: 33vw;
-  border-radius: 20px 0 0 0;
-  @media only screen and (max-width: 768px) {
-    padding-bottom: 35vw;
-  }
-  @media only screen and (max-width: 480px) {
-    padding-bottom: 60vw;
-  }
   .container {
     width: 25vw;
     height: 25vw;

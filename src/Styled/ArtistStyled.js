@@ -26,7 +26,7 @@ export const NameTalent = styled.div`
     padding: 10px 0 10px 10px;
     margin-top: 0;
     margin-bottom: 0;
-    color: var();
+    color: var(--grey);
   }
   @media only screen and (max-width: 768px) {
     margin-left: 8vw;
@@ -100,6 +100,7 @@ export const ArtistProfile = styled.section`
     .bio {
       width: 84vw;
       margin-left: 0;
+      margin-top: 0;
     }
   }
   @media only screen and (max-width: 480px) {

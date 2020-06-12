@@ -40,6 +40,7 @@ export const MainProfile = styled.div`
     @media only screen and (max-width: 480px) {
       width: 45vw;
       height: 48vw;
+      border-radius: 0 30px 0 0;
     }
     p {
       color: white;
@@ -86,6 +87,7 @@ export const MainProfile = styled.div`
       }
       svg {
         width: 2rem;
+        padding-top: 0.2rem;
       }
     }
     .bio {
@@ -107,9 +109,6 @@ export const MainProfile = styled.div`
         }
         span {
           font-size: 1.5rem;
-        }
-        svg {
-          width: 2.5rem;
         }
       }
       .bio {

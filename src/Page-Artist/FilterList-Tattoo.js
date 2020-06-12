@@ -8,6 +8,7 @@ class FilterListTattoo extends React.Component {
     return (
       <FilterList>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img src={artist.imageSrc[0]} alt="" />
           </div>
@@ -19,6 +20,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img src={artist.imageSrc[1]} alt="" />
           </div>
@@ -30,6 +32,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img src={artist.imageSrc[2]} alt="" />
           </div>
@@ -41,6 +44,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img className="portrait" src={artist.imageSrc[3]} alt="" />
           </div>
@@ -52,6 +56,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img className="portrait" src={artist.imageSrc[4]} alt="" />
           </div>
@@ -63,6 +68,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img className="portrait" src={artist.imageSrc[5]} alt="" />
           </div>
@@ -74,6 +80,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img className="portrait" src={artist.imageSrc[6]} alt="" />
           </div>
@@ -85,6 +92,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer>
+          <p>{artist.name}</p>
           <div className="container">
             <img src={artist.imageSrc[7]} alt="" />
           </div>
@@ -96,6 +104,7 @@ class FilterListTattoo extends React.Component {
           </div>
         </TattooContainer>
         <TattooContainer id="mobile-container">
+          <p>{artist.name}</p>
           <div className="container">
             <img src={artist.imageSrc[8]} alt="" />
           </div>
